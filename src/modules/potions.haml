@@ -26,3 +26,11 @@
                         <item slot="3" damage="8229">potion</item>
 
                     The damage specifies the potion type. [Minecraft wiki - Potions](http://www.minecraftwiki.net/wiki/Potions).
+
+                    Alternitively, you can give custom potions by using `potions="potion type:ticks:potency:ambient value"`. The potion type can be found on the [Minecraft wiki - Potions](http://www.minecraftwiki.net/wiki/Potions). The ambient value can only be `true` or `false`.
+
+                    `NOTE:` There are 20 ticks to one second.
+
+                    This will give you a potion with a base effect, potency, and duration as well as a fire resistance effect:
+
+                        <item slot="3" damage="8229" potions="fire resistance:900:0:false">potion</item>
